@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
+import Main from './pages/Cardapio';
 
 
 const root = ReactDOM.createRoot(
@@ -8,8 +9,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <div>
-      Aluroni
-    </div>
+    <Main />
   </React.StrictMode>
 );

@@ -7,6 +7,11 @@ export default function Main() {
       <nav className={styles.menu}>
         <Logo />
       </nav>
+      <header className={styles.header}>
+        <div className={styles.header__text}>
+          A casa do codigo é massa
+        </div>
+      </header>
     </main>
   )
 }

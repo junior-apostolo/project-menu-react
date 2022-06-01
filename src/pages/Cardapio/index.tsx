@@ -8,7 +8,7 @@ import Order from './Ordenador'
 export default function Main() {
   const [busca, setBusca] = useState("")
   const [filtro, setFiltro] = useState<number | null>(null)
-  // const [,] = useState(null)
+  const [order, setOrder] = useState("")
 
   return (
     <main>
@@ -25,7 +25,7 @@ export default function Main() {
         <Search busca={busca} setBusca={setBusca} />
         <div className={styles.cardapio__filtros}>
           <Filters filtro={filtro} setFiltro={setFiltro} />
-          <Order />
+          <Order order={order} setOrder={setOrder}/>
         </div>
       </section>
     </main>

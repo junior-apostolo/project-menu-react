@@ -2,9 +2,14 @@ import styles from './Cardapio.module.scss'
 import { ReactComponent as Logo } from 'assets/logo.svg'
 import Search from './Buscador'
 import { useState } from 'react'
+import Filters from './Filtros'
+import Order from './Ordenador'
 
 export default function Main() {
   const [busca, setBusca] = useState("")
+  const [filtro, setFiltro] = useState<number | null>(null)
+  // const [,] = useState(null)
+
   return (
     <main>
       <nav className={styles.menu}>
@@ -18,6 +23,10 @@ export default function Main() {
       <section className={styles.cardapio}>
         <h3 className={styles.cardapio__titulo}>Cardápio</h3>
         <Search busca={busca} setBusca={setBusca} />
+        <div className={styles.cardapio__filtros}>
+          <Filters filtro={filtro} setFiltro={setFiltro} />
+          <Order />
+        </div>
       </section>
     </main>
   )

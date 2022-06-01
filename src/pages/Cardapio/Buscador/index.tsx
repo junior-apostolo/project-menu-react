@@ -13,6 +13,7 @@ export default function Search({ busca, setBusca }: Props) {
       type="text"
       value={busca}
       onChange={(event) => setBusca(event.target.value)}
+      placeholder="Buscar"
     />
     <CgSearch 
       size={20}

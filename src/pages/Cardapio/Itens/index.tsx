@@ -6,7 +6,10 @@ export default function Itens() {
   return (
     <div className={styles.itens}>
       {itens.map((item) => (
-        <Item key={item.id}/>
+        <Item
+        key={item.id}
+        {...item}
+        />
       ))}
     </div>
   )

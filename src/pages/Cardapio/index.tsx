@@ -28,7 +28,7 @@ export default function Main() {
           <Filters filtro={filtro} setFiltro={setFiltro} />
           <Order order={order} setOrder={setOrder} />
         </div>
-        <Itens />
+        <Itens busca={busca} filtro={filtro} order={order}/>
       </section>
     </main>
   )

@@ -1,15 +1,15 @@
-import styles from './Cardapio.module.scss'
-import { ReactComponent as Logo } from 'assets/logo.svg'
-import Search from './Buscador'
-import { useState } from 'react'
-import Filters from './Filtros'
-import Order, {OpcoesOrdenador} from './Ordenador'
-import Itens from './Itens'
+import styles from './Cardapio.module.scss';
+import { ReactComponent as Logo } from 'assets/logo.svg';
+import Search from './Buscador';
+import { useState } from 'react';
+import Filters from './Filtros';
+import Order, {OpcoesOrdenador} from './Ordenador';
+import Itens from './Itens';
 
 export default function Main() {
-  const [busca, setBusca] = useState("")
-  const [filtro, setFiltro] = useState<number | null>(null)
-  const [order, setOrder] = useState<OpcoesOrdenador>("")
+  const [busca, setBusca] = useState('');
+  const [filtro, setFiltro] = useState<number | null>(null);
+  const [order, setOrder] = useState<OpcoesOrdenador>('');
 
   return (
     <main>
@@ -31,5 +31,5 @@ export default function Main() {
         <Itens busca={busca} filtro={filtro} order={order}/>
       </section>
     </main>
-  )
+  );
 }

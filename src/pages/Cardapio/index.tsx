@@ -3,13 +3,13 @@ import { ReactComponent as Logo } from 'assets/logo.svg'
 import Search from './Buscador'
 import { useState } from 'react'
 import Filters from './Filtros'
-import Order from './Ordenador'
+import Order, {OpcoesOrdenador} from './Ordenador'
 import Itens from './Itens'
 
 export default function Main() {
   const [busca, setBusca] = useState("")
   const [filtro, setFiltro] = useState<number | null>(null)
-  const [order, setOrder] = useState("")
+  const [order, setOrder] = useState<OpcoesOrdenador>("")
 
   return (
     <main>

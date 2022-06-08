@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import 'normalize.css';
 import './index.css';
-import Main from './pages/Cardapio';
-import Inicio from 'pages/Inicio';
+import AppRouter from 'routes/routes';
+
 
 
 const root = ReactDOM.createRoot(
@@ -11,6 +11,6 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <Inicio />
+    <AppRouter />
   </React.StrictMode>
 );

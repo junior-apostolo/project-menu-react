@@ -4,6 +4,8 @@ import { useState } from 'react';
 import Filters from './Filtros';
 import Order, { OpcoesOrdenador } from './Ordenador';
 import Itens from './Itens';
+import stylesTema from 'styles/Tema.module.scss';
+
 
 export default function Main() {
   const [busca, setBusca] = useState('');
@@ -12,7 +14,7 @@ export default function Main() {
 
   return (
     <section className={styles.cardapio}>
-      <h3 className={styles.cardapio__titulo}>Cardápio</h3>
+      <h3 className={stylesTema.titulo}>Cardápio</h3>
       <Search busca={busca} setBusca={setBusca} />
       <div className={styles.cardapio__filtros}>
         <Filters filtro={filtro} setFiltro={setFiltro} />

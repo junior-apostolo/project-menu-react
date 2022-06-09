@@ -14,8 +14,8 @@ export default function AppRouter() {
           <Route path='/' element={<Header />}>
             <Route index element={<Inicio />} />
             <Route path='/cardapio' element={<Cardapio />} />
+            <Route path='/sobre' element={<Sobre />} />
           </Route>
-          <Route path='/sobre' element={<Sobre />} />
         </Routes>
       </Router>
     </main>

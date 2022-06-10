@@ -6,6 +6,7 @@ import Sobre from 'pages/Sobre';
 import Header from 'components/Header';
 import Footer from 'components/Footer';
 import NotFound from 'pages/NotFound';
+import Prato from 'pages/Prato';
 
 export default function AppRouter() {
   return (
@@ -15,10 +16,11 @@ export default function AppRouter() {
         <Routes>
           <Route path='/' element={<Header />}>
             <Route index element={<Inicio />} />
-            <Route path='/cardapio' element={<Cardapio />} />
-            <Route path='/sobre' element={<Sobre />} />
+            <Route path='cardapio' element={<Cardapio />} />
+            <Route path='sobre' element={<Sobre />} />
           </Route>
           <Route path='*' element={<NotFound />} />
+          <Route path='/prato/:id' element={<Prato />} />
         </Routes>
         <Footer />
       </Router>
